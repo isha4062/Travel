@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+body{
+	background: #3A3A42;
+	box-sizing: content-box;
+}
+.menu{
+	position: fixed;
+	height: 100vh;
+	background: #F9D401;
+	width: 10vw;
+	box-shadow: 1px 0 2px rgba(0,0,0,.2);
+	transition: 1s;
+}
+.menu:hover{
+    width: 40vw;
+}
+.menu:hover ~ .container{
+	transform: perspective(80vw) rotateY(10deg) translateX(35vw) scaleY(1.2);
+}
+.menu:hover nav{
+    left: 20%;
+}
+	
+		
+/* nav */
+nav{
+	position: absolute;
+	margin-top: 50%;
+	left: -1000px;
+	transition: .5s;
+}
+.show{
+    display: none;
+    position: relative;
+}
+ul{
+	color: white;
+	text-transform: uppercase;
+}
+li{
+    line-height: 2em;
+    list-style: none;
+    font-family: cursive;
+}
+li a{
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+}
+li a:hover{
+	font-size: 22px;
+    color: grey;
+}	
+li#title i{
+    font-size: 100px;
+    margin-bottom: 30px;
+}
+#people{
+    font-size: 20px;
+    cursor: pointer;
+}
+#message{
+    font-size: 10px;
+    font-family: cursive;
+    font-weight: bold;
+    color: grey;
+}
+
+/* destination */
+#offcanvasExample #p-places{
+    border: 2px dotted skyblue;
+    height: 800px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+#offcanvasExample #p-places li{
+    list-style: none;
+}
+#offcanvasExample #p-places li i{
+    color: pink;
+    margin-right: 10px;
+}
+#offcanvasExample #p-places h1{
+    color: skyblue;
+    font-family: 'The Nautigal', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+#offcanvasExample #p-places a{
+    text-decoration: none;
+    color: grey;
+    font-family: cursive;
+    font-size: 10px;
+}
+#offcanvasExample #s h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+#offcanvasExample #s-states{
+    width: 450px;
+    margin-top: -30px;
+}
+#offcanvasExample #s-states ul{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#offcanvasExample #u h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#offcanvasExample #u-union{
+    width: 450px;
+    margin-top: -30px;
+}
+#offcanvasExample #u-union ul{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#offcanvasExample{
+    width: 550px;
+}
+#offcanvasExampleLabel{
+    color: grey;
+    text-shadow: 3px 3px 4px black;
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+
+/* icons */
+#icons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+#icons i{
+    margin-right: 20px;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    font-size: 25px;
+}
+#icons div:hover i{
+    transform: rotate(360deg);
+    font-size: 29px;
+}
+#instagram:hover i{
+    color: purple;
+}
+#fac:hover i{
+    color: darkblue;
+}
+#twit:hover i{
+    color: skyblue;
+}
+#pin:hover i{
+    color: darkred;
+}
+#you:hover i{
+    color: red;
+}
+#male:hover i{
+    color: black;
+}
+
+/* Body */
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 1200px;
+    /* background-color: grey; */
+    margin-right: 0px;
+	transition: 1s;
+	transform-origin: left center;
+	color: #D2D2D0;
+}
+.content{
+    height: 650px;
+    margin-left: 50px;
+}
+.content p{
+	font-size: 13px;
+}
+.content h1{
+	color: #bbb;
+    text-shadow: 5px 5px 4px black;
+    text-align: center;
+    font-family: 'The Dancing Script';
+    margin-top: 20px;
+}
+#time{
+    margin-top: 10px;
+}
+.content p{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Dongle', sans-serif;
+    line-height: 18px;
+}
+h6{
+    margin-top: 5px;
+    font-family: cursive;
+}
+div#fixed-img{
+    width: 700px;
+    height: 650px;
+}
+figure{
+    overflow: hidden;    
+}
+#fixed-img img{
+    overflow: hidden;
+    transform: scale(1);
+    transition: 1s ease-in-out;
+}
+#fixed-img:hover img{
+    transform: scale(1.5);
+}
+
+/* carousel */
+#last{
+    color: white;
+    width: 100%;
+    font-family: cursive;
+    margin: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+#copy{
+    margin: 0px;
+}
+#last i{
+    color: orange;
+}

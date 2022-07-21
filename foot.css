@@ -1,0 +1,67 @@
+#foot{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+#icons{
+    display: flex;
+    flex-direction: row;
+    color: violet;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#icons div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: grey;
+    text-align: center;
+    cursor: pointer;
+}
+#icons div i{
+    margin-top: 13px;
+}
+#instagram{
+    margin-left: 530px;
+}
+#icons i{
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    font-size: 20px;
+}
+#icons div:hover{
+    background-color: black;
+}
+#icons div:hover i{
+    transform: rotate(360deg);
+    font-size: 24px;
+}
+#instagram:hover i{
+    color: purple;
+}
+#fac:hover i{
+    color: darkblue;
+}
+#twit:hover i{
+    color: skyblue;
+}
+#pin:hover i{
+    color: darkred;
+}
+#you:hover i{
+    color: red;
+}
+#last{
+    color: white;
+    background-color: black;
+    width: 100%;
+    font-family: cursive;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+#copy{
+    margin: 0px;
+}
+#last i{
+    color: orange;
+}

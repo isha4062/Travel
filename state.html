@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>State</title>
+    <link rel="stylesheet" href="./state.css" />
+    <link rel="stylesheet" href="./destination.css" />
+    <link rel="stylesheet" href="./foot.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-5.15.4-web\css\all.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="start" class="overlay-text visible">
+      Welcome
+      <h3>Click to begin a new Journey...</h3>
+    </div>
+    <div id="arrow">
+      <a href="#top"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+    <nav>
+      <ul>
+        <li id="title">
+          <a href="#"><i class="fas fa-praying-hands"></i></a>
+        </li>
+        <li id="home"><a href="home.php">Home</a></li>
+        <li id="dest">
+          <a
+            href="#"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+            >Destinations</a
+          >
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">India</h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body" id="canva">
+              <div id="p-places">
+                <div id="s">
+                  <h1>States</h1>
+                  <div id="s-states">
+                    <ul>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <span><a href="state.html">Andhra Pradesh</a></span>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <span><a href="state.html">Arunachal Pradesh</a></span>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Assam</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Bihar</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Chattisgarh</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Goa</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Gujarat</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Haryana</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Himachal Pradesh</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Jharkhand</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Karnataka</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Kerala</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Madhya Pradesh</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Maharashtra</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Manipur</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Meghalaya</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Mizoram</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Nagaland</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Odisha</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Punjab</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Rajasthan</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Sikkim</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Tamil Nadu</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Telangana</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Tripure</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Uttarakhand</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Uttar Pradesh</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">West Bengal</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="u">
+                  <h1>Union Territories</h1>
+                  <div id="u-union">
+                    <ul>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Andaman and Nicobar Islands</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Chandigarh</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Dadar and Nagar Haweli and Daman and Diu</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.css">Delhi</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Jammu & Kashmir</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Ladakh</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Lakshadweep</a>
+                      </li>
+                      <li>
+                        <i class="fas fa-link"></i>
+                        <a href="state.html">Puducherry</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#foot">Social</a></li>
+        <li id="male"><i id="people" class="fas fa-male"></i></li>
+        <div id="message"></div>
+      </ul>
+    </nav>
+
+    <section id="head">
+      <div
+        class="parallax"
+        data-parallax="scroll"
+        data-image-src="./img/pic1.jpg"
+        data-z-index="1"
+      >
+        <div id="context">
+          <div id="texts">
+            <h1 id="word">State</h1>
+            <h1 class="show" id="word2">Popular name</h1>
+          </div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim at, autem culpa consequatur recusandae blanditiis iusto. Eveniet quaerat explicabo aspernatur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error similique culpa, saepe accusamus officia ad? Explicabo odio corporis aliquam voluptatum ipsam. Molestias, eius impedit. Doloribus obcaecati impedit error similique nulla?  
+        </p>
+          <a href="#two" id="btn"><button type="submit">Lets's go</button></a>
+        </div>
+      </div>
+    </section>
+    <section id="two">
+      <div class="mytabs">
+        <input type="radio" id="tabfree" name="mytabs" />
+        <label for="tabfree">Hidden Gems</label>
+        <div class="tab">
+          <h2>Must Visit!</h2>
+          <div class="ek">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+              style="height: 300px; width: 500px"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/pic2.webp"
+                    class="d-block w-100"
+                    alt="..."
+                    width="500px"
+                    height="300px"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/pic3.webp"
+                    class="d-block w-100"
+                    alt="..."
+                    width="500px"
+                    height="300px"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/pic4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    width="500px"
+                    height="300px"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev change"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div id="text">
+              <h3>Europe's most visited places</h3>
+              <p>
+                Aenean in lacus nec dolor fermentum congue. Maecenas ut velit
+                pharetra, pharetra tortor sit amet, vulputate sem. Vestibulum mi
+                nibh, faucibus ac eros id, sagittis tincidunt velit. Proin
+                interdum ullamcorper faucibus. Ut mi nunc, sollicitudin non
+                pulvinar id, sagittis eget diam.
+              </p>
+              <a href="dest.html" class="btn">Continue Reading</a>
+            </div>
+          </div>
+          <div class="ek">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+              style="height: 300px; width: 500px"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/pic2.webp"
+                    class="d-block w-100"
+                    alt="..."
+                    width="500px"
+                    height="300px"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/pic3.webp"
+                    class="d-block w-100"
+                    alt="..."
+                    width="500px"
+                    height="300px"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/pic4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    width="500px"
+                    height="300px"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev change"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div id="text">
+              <h3>Europe's most visited places</h3>
+              <p>
+                Aenean in lacus nec dolor fermentum congue. Maecenas ut velit
+                pharetra, pharetra tortor sit amet, vulputate sem. Vestibulum mi
+                nibh, faucibus ac eros id, sagittis tincidunt velit. Proin
+                interdum ullamcorper faucibus. Ut mi nunc, sollicitudin non
+                pulvinar id, sagittis eget diam.
+              </p>
+              <a href="dest.html" class="btn">Continue Reading</a>
+            </div>
+          </div>
+        </div>
+
+        <input type="radio" id="tabsilver" name="mytabs" />
+        <label for="tabsilver">Restraunts/Cafes</label>
+        <div class="tab">
+          <h2>Cause Food is love...</h2>
+          <div class="card1">
+            <img src="./img/pic5.webp" alt="Image" width="300px" height="200px" />
+            <div class="box">
+              <h3>Europe Hotel</h3>
+              <h6>Venecia, Italy</h6>
+              <p>
+                Sed egestas, odio nec bibendum mattis, quam odio hendrerit
+                risus, eu varius eros lacus sit amet lectus. Donec blandit
+                luctus dictum...
+              </p>
+            </div>
+            <a href="#" class="price-box">
+              <p class="price">$330</p>
+            </a>
+          </div>
+          <div class="card1">
+            <img src="./img/pic5.webp" alt="Image" width="300px" height="200px" />
+            <div class="box">
+              <h3>Europe Hotel</h3>
+              <h6>Venecia, Italy</h6>
+              <p>
+                Sed egestas, odio nec bibendum mattis, quam odio hendrerit
+                risus, eu varius eros lacus sit amet lectus. Donec blandit
+                luctus dictum...
+              </p>
+            </div>
+            <a href="#" class="price-box">
+              <p class="price">$330</p>
+            </a>
+          </div>
+        </div>
+
+        <input type="radio" id="tabgold" name="mytabs" checked="checked" />
+        <label for="tabgold">Activities</label>
+        <div class="tab">
+          <h2>Looking for fun?</h2>
+          <div class="ek">
+            <div id="img">
+              <div id="zoom">
+                <figure>
+                  <img src="./img/pic1.jpg" alt="" width="500px" height="300px" />
+                </figure>
+              </div>
+            </div>
+            <div id="text2">
+              <div id="line">
+                <h3>Europe's most visited</h3>
+                <h6>Place</h6>
+                <p>
+                  Aenean in lacus nec dolor fermentum congue. Proin interdum
+                  ullamcorper faucibus. Ut mi nunc, sollicitudin non pulvinar
+                  id, sagittis eget diam.
+                </p>
+              </div>
+              <a href="#" class="price-box">
+                <p class="price">$330</p>
+                <p class="link">/per person</p>
+              </a>
+            </div>
+          </div>
+          <div class="ek">
+            <div id="img">
+              <div id="zoom">
+                <figure>
+                  <img src="./img/pic1.jpg" alt="" width="500px" height="300px" />
+                </figure>
+              </div>
+            </div>
+            <div id="text2">
+              <div id="line">
+                <h3>Europe's most visited</h3>
+                <h6>Place</h6>
+                <p>
+                  Aenean in lacus nec dolor fermentum congue. Proin interdum
+                  ullamcorper faucibus. Ut mi nunc, sollicitudin non pulvinar
+                  id, sagittis eget diam.
+                </p>
+              </div>
+              <a href="#" class="price-box">
+                <p class="price">$330</p>
+                <p class="link">/per person</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="foot">
+      <div id="icons">
+        <div id="instagram" title="instagram">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div id="fac" title="facebook"><i class="fab fa-facebook-f"></i></div>
+        <div id="twit" title="twitter"><i class="fab fa-twitter"></i></div>
+        <div id="pin" title="pinterest"><i class="fab fa-pinterest-p"></i></div>
+        <div id="you" title="youtube"><i class="fab fa-youtube"></i></div>
+      </div>
+      <div id="last">
+        <p id="copy">
+          Copyright © 2022 - NAMASTE <i class="fas fa-praying-hands"></i> - All
+          rights reserved.
+        </p>
+      </div>
+    </section>
+  </body>
+  <script>
+    let start = document.getElementById("start");
+    start.addEventListener("click", () => {
+      start.classList.remove("visible");
+    });
+    function motion() {
+      var people = document.getElementById("male");
+      var child = document.getElementById("people");
+      var mess = document.getElementById("message");
+      setInterval(() => {
+        child.classList.toggle("fa-male");
+        child.classList.toggle("fa-child");
+      }, 800);
+      people.addEventListener("mouseover", () => {
+        mess.innerHTML = " Welcome!";
+        mess.classList.remove("show");
+      });
+      people.addEventListener("mouseout", () => {
+        mess.classList.add("show");
+      });
+    }
+    motion();
+    var box = document.getElementById("texts");
+    var text2 = document.getElementById("word2");
+    var text = document.getElementById("word");
+    console.log(text2);
+    box.addEventListener("mouseover", () => {
+      text2.classList.remove("show");
+      text.classList.add("show");
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="../parallax/parallax.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+</html>

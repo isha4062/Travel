@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+*{
+    margin: 0;
+}
+body{
+    background: rgb(27, 27, 27);
+    margin: 0;
+    /* cursor: pointer; */
+}
+#paraimg{
+    height: 600px;
+    width: 100%;
+    padding: 30px 0px;
+}
+#paraimg video{
+    min-height: 100%;
+    position: fixed;
+    top: -22px;
+    z-index: -999;
+    object-fit: cover;
+    height: 700px;
+    width: 100%;
+}
+#paraimg::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 777;
+    width: 100%;
+    height: 660px;
+    background: rgb(3, 96, 251 , 0.3);
+}
+.video-clip{
+    clip-path: circle(0% at 0 50%);
+}
+.video-clip.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
+}
+div#button{
+    width: 100%;
+    height: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+div#button .btn{
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    z-index: 999;
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+}
+div#button .btn:hover{
+    box-shadow: 2px 2px 4px black;
+    margin-top: 4px;
+    background-color: cyan;
+}
+#paraimg #writeup{
+    z-index: 999;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+div#text{
+    margin-left: 510px;
+    margin-top: 200px;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+}
+div#text h1{
+    font-size: 80px;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 5px;
+    transition: 0.5s ease;
+}
+div#text h1:hover{
+    text-shadow: 6px 6px 8px black;
+    cursor: pointer;
+}
+div#text p{
+    font-family: cursive;
+    color: cyan;
+    font-size: 15px;
+    width: 355px;
+    margin-top: -10px;
+}
+button.down{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-top: 30px;
+    background-color: transparent;
+}
+button.down a{
+    text-decoration: none;
+    color: cyan;
+    transition: 0.5s ease;
+}
+button.down i{
+    margin-top: -30px;
+    font-size: 20px;
+    animation: buttonMove .5s infinite alternate;
+    transition: 1s ease;
+}
+@keyframes buttonMove {
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(100%);
+    }
+}
+div#icon_head{
+    margin-left: 424px;
+    width: 80px;
+    height: 100px;
+    color: white;
+    margin-top: 60px;
+}
+div#icon_head div{
+    margin-top: 10px;
+    background-color: rgb(3, 96, 251 , 0.3);
+    border: 2px solid cyan;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    cursor: pointer;
+}
+div#icon_head i{
+    padding: 10px;
+}
+div#icon_head div:hover{
+    box-shadow: 3px 3px 5px black;
+}
+div#icon_head div:hover i{
+    font-size: 20px;
+}
+.cursor{
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100;
+    transition: 200ms ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
+@keyframes cursorAnim {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.7);
+    }
+}
+@keyframes cursorAnim2 {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(0.4);
+    }
+}
+.cursor::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 8px solid grey;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.5;
+    top: -13px;
+    left: -13px;
+    animation: cursorAnim2 1s infinite alternate;
+}
+.expand{
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+@keyframes cursorAnim3 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* Main */
+#main{
+    background-color: black;
+}
+#quote{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+#quote::before{
+    content: "";
+    position: absolute;
+    width: 50.3%;
+    height: 200px;
+    background-color: lightcoral;
+    opacity: 0.3;
+}
+#quote p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Neonderthaw', cursive;
+    letter-spacing: 3px;
+    color: white;
+    text-shadow: 3px 3px 6px cyan;
+}
+#quote h4{
+    text-align: right;
+    margin-right: 300px;
+    margin-top: 10px;
+    color: brown;
+    font-family: cursive;
+}
+#quote i{
+    margin-left: -8px;
+    margin-top: 30px;
+    color: cyan;
+    text-shadow: 3px 3px 4px black;
+}
+#quote h1{
+    color: cyan;
+    margin-left: -9px;
+    text-shadow: 2px 2px 4px black;
+}
+#context{
+    font-family: cursive;
+    width: 100%;
+    height: 800px;
+}
+#context::before{
+    content: "";
+    width: 49.6%;
+    height: 600px;
+    position: absolute;
+    background-color: cyan;
+    opacity: 0.5;
+}
+#context h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 100px;
+    font-family: 'Satisfy', cursive;
+    text-shadow: 3px 3px 6px cyan;
+    font-weight: bold;
+}
+#context i{
+    margin-left: 662px;
+    margin-top: -10px;
+    position: absolute;
+    color: purple;
+    cursor: pointer;
+    transition: 1s ease;
+}
+#context i:hover{
+    transform: rotate(360deg);
+    font-size: 20px;
+    box-shadow: 2px 2px 4px black;
+}
+
+/* Swiper */
+div.swiper {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+div.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent , #0006);
+}
+
+div.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+/* Tabs */
+div#tabs{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top: -120px;
+    margin-left: 20px;
+    height: 1900px;
+}
+div#tabs .card{
+    color: white;
+    height: 260px;
+    width: 230px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 4px cyan;
+    border: 1px solid cyan;
+}
+div#tabs .card:hover{
+    border: 0.5px solid red;
+    cursor: pointer;
+}
+div#tabs .card h5{
+    font-family: 'Bree Serif', serif;
+    font-size: 13px;
+}
+div#tabs .card p{
+    font-family: cursive;
+    font-size: 10px;
+}
+div#tabs img{
+    height: 150px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+div#tabs button{
+    margin-top: 8px;
+    width: 100%;
+    color: black;
+    font-family: 'Bree Serif', serif;
+}
+div#tabs button:hover{
+    cursor: pointer;
+    font-size: 15px;
+    color: red;
+    border-radius: 10px;
+}
+
+/* map */
+div#map{
+    height: 700px;
+    margin-top: 100px;
+}
+div#map p#india{
+    width: 55%;
+    float: right;
+}
+div#map table{
+    float: left;
+    width: 40%;
+    margin-left: 30px;
+}
+div#map table caption{
+    font-family: cursive;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 4px red;
+}
+div#map table td{
+    width: 150px;
+    height: 150px;
+}
+div#map table img{
+    width: 100%;
+    height: 100%;
+}
+
+/* form{
+    width: 410px;
+    height: 400px;
+    background-color: grey;
+    padding: 20px;
+    color: white;
+    margin-top: 80px;
+    margin-left: 780px;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+form .form-control{
+    margin-top: 3px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: 400px;
+    height: 30px;
+    font-size: 14px;
+    color: grey;
+    font-family: cursive;
+}
+form .form-control:hover{
+    box-shadow: 3px 3px 4px black;
+}
+form .form-control:focus{
+    box-shadow: 3px 3px 4px cyan;
+}
+form .form-label{
+    font-family: cursive;
+}
+form h1{
+    font-family: 'Neonderthaw', cursive;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-shadow: 3px 3px 4px black;
+}
+form p{
+    margin-bottom: 20px;
+}
+form button{
+    background-color: black;
+    color: white;
+    width: 400px;
+    height: 30px;
+    margin-top: 10px;
+    font-family: cursive;
+}
+form button:hover{
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border-radius: 20px;
+    box-shadow: inset 3px 3px 4px white;
+} */
+
+/* foot */
+div#foot{
+    margin-top: 60px;
+    color: white;
+    width: 100%;
+    height: 300px;
+}
+div#foot #info{
+    margin-bottom: 30px;
+}
+div#foot #info h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 60px;
+    text-shadow: 3px 3px 4px cyan;
+}
+div#foot #info h6{
+    font-size: 15px;
+}
+div#foot #info p{
+    font-size: 18px;
+}
+div#foot #contact{
+    display: flex;
+    flex-direction: row;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+div#foot #contact span{
+    margin-left: 70px;
+    font-size: 20px;
+    font-family: cursive;
+}
+div#foot #icons{
+    margin-left: 20px;
+}
+div#foot #icons div{
+    background-color: black;
+    box-shadow: 1px 1px 2px cyan;
+}
+div#foot #lastImg{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+div#foot #lastImg img{
+    height: 30px;
+    width: 100%;
+}
