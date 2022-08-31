@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
 
 *{
     margin: 0;
@@ -151,61 +151,6 @@ div#icon_head div:hover{
 div#icon_head div:hover i{
     font-size: 20px;
 }
-.cursor{
-    border: 1px solid white;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 100;
-    transition: 200ms ease-out;
-    animation: cursorAnim .5s infinite alternate;
-    pointer-events: none;
-}
-@keyframes cursorAnim {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(0.7);
-    }
-}
-@keyframes cursorAnim2 {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(0.4);
-    }
-}
-.cursor::before{
-    content: '';
-    width: 30px;
-    height: 30px;
-    border: 8px solid grey;
-    border-radius: 50%;
-    position: absolute;
-    opacity: 0.5;
-    top: -13px;
-    left: -13px;
-    animation: cursorAnim2 1s infinite alternate;
-}
-.expand{
-    animation: cursorAnim3 .5s forwards;
-    border: 1px solid red;
-}
-@keyframes cursorAnim3 {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(3);
-    }
-    100%{
-        transform: scale(1);
-        opacity: 0;
-    }
-}
 
 /* Main */
 #main{
@@ -227,9 +172,9 @@ div#icon_head div:hover i{
 #quote p{
     text-align: center;
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 40px;
     font-style: italic;
-    font-family: 'Neonderthaw', cursive;
+    font-family: 'Qwitcher Grypen', cursive;
     letter-spacing: 3px;
     color: white;
     text-shadow: 3px 3px 6px cyan;
@@ -255,7 +200,7 @@ div#icon_head div:hover i{
 #context{
     font-family: cursive;
     width: 100%;
-    height: 800px;
+    height: 650px;
 }
 #context::before{
     content: "";
@@ -309,11 +254,56 @@ div.swiper-slide img {
     height: 300px;
 }
 
+/* search-bar */
+div.search{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(255 , 255 , 255 , 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+form.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+    z-index: 1;
+    text-align: center;
+}
+::placeholder{
+    color: #cac7ff;
+}
+form.search-bar button img{
+    width: 25px;
+    height: 25px;
+}
+form.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #58629b;
+    cursor: pointer;
+    z-index: 1;
+}
+
 /* Tabs */
 div#tabs{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    margin-top: -120px;
+    /* margin-top: -120px; */
     margin-left: 20px;
     height: 1900px;
 }
@@ -385,62 +375,6 @@ div#map table img{
     width: 100%;
     height: 100%;
 }
-
-/* form{
-    width: 410px;
-    height: 400px;
-    background-color: grey;
-    padding: 20px;
-    color: white;
-    margin-top: 80px;
-    margin-left: 780px;
-    opacity: 0.9;
-    border-radius: 20px;
-}
-form .form-control{
-    margin-top: 3px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    width: 400px;
-    height: 30px;
-    font-size: 14px;
-    color: grey;
-    font-family: cursive;
-}
-form .form-control:hover{
-    box-shadow: 3px 3px 4px black;
-}
-form .form-control:focus{
-    box-shadow: 3px 3px 4px cyan;
-}
-form .form-label{
-    font-family: cursive;
-}
-form h1{
-    font-family: 'Neonderthaw', cursive;
-    color: black;
-    letter-spacing: 2px;
-    font-size: 40px;
-    text-shadow: 3px 3px 4px black;
-}
-form p{
-    margin-bottom: 20px;
-}
-form button{
-    background-color: black;
-    color: white;
-    width: 400px;
-    height: 30px;
-    margin-top: 10px;
-    font-family: cursive;
-}
-form button:hover{
-    font-size: 15px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    border-radius: 20px;
-    box-shadow: inset 3px 3px 4px white;
-} */
 
 /* foot */
 div#foot{

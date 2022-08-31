@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="cursor"></div>
+  <!-- <div class="cursor"></div> -->
   <section id="paraimg">
     <video class="video-clip active" src="img/one.mp4" muted autoplay loop></video>
     <video class="video-clip" src="img/two.mp4" muted autoplay loop></video>
@@ -41,7 +41,6 @@
   </section>
   <section id="main">
     <div id="quote">
-      <!-- <img src="img/quote.png" alt="" width="20px" height="20px"> -->
       <i class="fas fa-quote-left"></i>
       <p>The World is a Book and those who do not travel read only one Page</p>
       <h4>~ Saint Augustine</h4>
@@ -53,34 +52,42 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="img/swiper1.jpg" />
+            <a href="dest.html"><img src="img/swiper1.jpg" /></a>
           </div>
           <div class="swiper-slide">
-            <img src="img/swiper2.jfif" />
+            <a href="dest.html"><img src="img/swiper2.jfif" /></a>
           </div>
           <div class="swiper-slide">
-            <img src="img/swiper3.jfif" />
+            <a href="dest.html"><img src="img/swiper3.jfif" /></a>
           </div>
           <div class="swiper-slide">
-            <img src="img/swiper4.jpg" />
+            <a href="dest.html"><img src="img/swiper4.jpg" /></a>
           </div>
           <div class="swiper-slide">
-            <img src="img/swiper5.jpg" />
+            <a href="dest.html"><img src="img/swiper5.jpg" /></a>
           </div>
           <div class="swiper-slide">
-            <img src="img/swiper6.jfif" />
+            <a href="dest.html"><img src="img/swiper6.jfif" /></a>
           </div>
           <div class="swiper-slide">
-            <img src="img/swiper7.jpg" />
+            <a href="dest.html"><img src="img/swiper7.jpg" /></a>
           </div>
           <div class="swiper-slide">
-            <img src="img/swiper8.jfif" />
+            <a href="dest.html"><img src="img/swiper8.jfif" /></a>
           </div>
           <div class="swiper-slide">
-            <img src="img/swiper9.jpg" />
+            <a href="dest.html"><img src="img/swiper9.jpg" /></a>
           </div>
         </div>
       </div>
+      <div>
+      </div>
+    </div>
+    <div class="search">
+      <form class="search-bar" id="searchForm">
+        <input type="text" placeholder="Search for a state here" name="search" id="state">
+        <button type="submit" id="searchButton"><img src="img/search.png" alt=""></button>
+      </form>
     </div>
     <div id="tabs">
       <div class="card" style="width: 200px">
@@ -451,22 +458,15 @@
     },
   });
 
+  var searchButton = document.getElementById('searchButton');
+  var searchInput = document.getElementById('search');
+  searchButton.addEventListener('click' , (e) => {
+    e.preventDefault();
+    window.location.href = 'state.html';
+    searchInput.value = ''
+  })
+  
+
 </script>
-
-
-<script>
-    var cursor = document.querySelector('.cursor');
-    console.log(cursor);
-    window.addEventListener('mousemove', e => {
-        cursor.style.top = (e.pageY - 10) + 'px';
-        cursor.style.left = (e.pageX - 10) + 'px';
-    });
-    window.addEventListener('click', () => {
-        cursor.classList.add('expand');
-        setTimeout(() => {
-            cursor.classList.remove("expand");
-        }, 500)
-    })
-</script> 
 
 </html>
