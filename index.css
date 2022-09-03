@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap');
 
 *{
     margin: 0;
@@ -43,6 +45,12 @@ body{
     transition: 2s ease;
     transition-property: clip-path;
 }
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
 div#button{
     width: 100%;
     height: 25px;
@@ -66,39 +74,38 @@ div#button .btn:hover{
     margin-top: 4px;
     background-color: cyan;
 }
-#paraimg #writeup{
-    z-index: 999;
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-div#text{
-    margin-left: 510px;
+div.text.show{
+    width: 100%;
+    /* margin-left: 510px; */
     margin-top: 200px;
-    width: 600px;
+    /* width: 600px; */
     height: 200px;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
 }
-div#text h1{
+div.text.show h1{
+    text-align: center;
     font-size: 80px;
+    width: 800px;
     color: white;
     font-family: 'Indie Flower', cursive;
     letter-spacing: 5px;
     transition: 0.5s ease;
 }
-div#text h1:hover{
+div.text.show h1:hover{
     text-shadow: 6px 6px 8px black;
     cursor: pointer;
 }
-div#text p{
+div.text.show p{
     font-family: cursive;
     color: cyan;
     font-size: 15px;
     width: 355px;
     margin-top: -10px;
+    text-align: center;
 }
 button.down{
     width: 50px;
@@ -107,6 +114,7 @@ button.down{
     border-radius: 50%;
     margin-top: 30px;
     background-color: transparent;
+    z-index: 999;
 }
 button.down a{
     text-decoration: none;
@@ -126,30 +134,6 @@ button.down i{
     to{
         transform: translateY(100%);
     }
-}
-div#icon_head{
-    margin-left: 424px;
-    width: 80px;
-    height: 100px;
-    color: white;
-    margin-top: 60px;
-}
-div#icon_head div{
-    margin-top: 10px;
-    background-color: rgb(3, 96, 251 , 0.3);
-    border: 2px solid cyan;
-    border-right: none;
-    border-radius: 20px 0 0 20px;
-    cursor: pointer;
-}
-div#icon_head i{
-    padding: 10px;
-}
-div#icon_head div:hover{
-    box-shadow: 3px 3px 5px black;
-}
-div#icon_head div:hover i{
-    font-size: 20px;
 }
 
 /* Main */
@@ -171,10 +155,10 @@ div#icon_head div:hover i{
 }
 #quote p{
     text-align: center;
-    margin-top: 20px;
-    font-size: 40px;
+    margin-top: 30px;
+    font-size: 24px;
     font-style: italic;
-    font-family: 'Qwitcher Grypen', cursive;
+    font-family: 'Aboreto', cursive;
     letter-spacing: 3px;
     color: white;
     text-shadow: 3px 3px 6px cyan;
@@ -182,7 +166,7 @@ div#icon_head div:hover i{
 #quote h4{
     text-align: right;
     margin-right: 300px;
-    margin-top: 10px;
+    margin-top: 20px;
     color: brown;
     font-family: cursive;
 }
@@ -299,11 +283,154 @@ form.search-bar button{
     z-index: 1;
 }
 
+/* category */
+div.category{
+    width: 90%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+div.category button{
+    position: relative;
+    width: 250px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-family: cursive;
+    border: none;
+    box-shadow: 2px 2px 5px white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+div.category button::before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    background: linear-gradient(#00ccff , #d400d4);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+div.category button::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background-color: #0e1538;
+}
+div.category button h1{
+    position: relative;
+    z-index: 1;
+}
+div.category button:hover{
+    box-shadow: 2px 2px 5px cyan;
+    font-size: 15px;
+}
+div.category ul{
+    color: white;
+}
+div.category ul ul{
+    display: none;
+    width: 210px;
+    background-color: #0e1538;
+    opacity: 0.8;
+}
+div.category ul li:hover > ul{
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+div.category ul li.catList{
+    list-style: none;
+}
+div.category ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* tabs */
+div#explore{
+    display: flex;
+    flex-direction: row;
+}
+div.tabs{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 3px #00ccff;
+    border-radius: 50%;
+    margin-left: 20px;
+    padding: 20px;
+    margin-bottom: 60px;
+    padding-bottom: 50px;
+}
+
+div.tabs .tab{
+    display: flex;
+    flex-direction: row;
+}
+div.tabs h1{
+    color: white;
+    font-size: 50px;
+    margin: 20px;
+    border-bottom: 1px solid cyan;
+}
+div.tabs .state{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.tabs img{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 5px;
+}
+div.tabs img:hover{
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+}
+
+div.book{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div.book p{
+    color: cyan;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 5px white;
+}
+div.book p#first{
+    margin-left: -110px;
+}
+
 /* Tabs */
 div#tabs{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    /* margin-top: -120px; */
     margin-left: 20px;
     height: 1900px;
 }

@@ -1,472 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="foot.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web\css\all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="foot.css">
-  <link rel="stylesheet" href="fontawesome-free-5.15.4-web\css\all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-</head>
+  <body>
+    <section id="paraimg">
+      <div id="button">
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+      <div class="vid">
+        <video
+          class="video-clip active"
+          src="img/one.mp4"
+          muted
+          autoplay
+          loop
+        ></video>
+        <div id="text" class="text show">
+          <h1>Namaste</h1>
+          <p>Be a Traveller not a Tourist</p>
+          <button class="down">
+            <a href="#main"><i class="far fa-hand-point-down"></i></a>
+          </button>
+        </div>
+      </div>
+      <div class="vid">
+        <video class="video-clip" src="img/two.mp4" muted autoplay loop></video>
+        <div id="text" class="text hide">
+          <h1>Wanna know about some offbeat places?</h1>
+        </div>
+      </div>
+      <div class="vid"><video class="video-clip" src="img/three.mp4" muted autoplay loop></video>
+        <div id="text" class="text hide">
+          <h1>Finding it difficult to talk to the locals?</h1>
+        </div>
+      </div>
+      <div class="vid"><video class="video-clip" src="img/four.mp4" muted autoplay loop></video>
+        <div id="text" class="text hide">
+          <h1>We got you covered here!</h1>
+          <button class="down">
+            <a href="#main"><i class="far fa-hand-point-down"></i></a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="main">
+      <div id="quote">
+        <i class="fas fa-quote-left"></i>
+        <p>
+          The World is a Book and those who do not travel read only one Page
+        </p>
+        <h4>~ Saint Augustine</h4>
+        <h1>-</h1>
+      </div>
+      <div id="context">
+        <i class="fas fa-star-half-alt"></i>
+        <h1>Explore</h1>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="dest.html"><img src="img/swiper1.jpg" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="dest.html"><img src="img/swiper2.jfif" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="dest.html"><img src="img/swiper3.jfif" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="dest.html"><img src="img/swiper4.jpg" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="dest.html"><img src="img/swiper5.jpg" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="dest.html"><img src="img/swiper6.jfif" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="dest.html"><img src="img/swiper7.jpg" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="dest.html"><img src="img/swiper8.jfif" /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="dest.html"><img src="img/swiper9.jpg" /></a>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div class="search">
+        <form class="search-bar" id="searchForm">
+          <input
+            type="text"
+            placeholder="Search for a state here"
+            name="search"
+            id="state"
+          />
+          <button type="submit" id="searchButton">
+            <img src="img/search.png" alt="" />
+          </button>
+        </form>
+      </div>
+      <div class="category">
+        <div class="cat">
+          <ul>
+            <li class="catList">
+              <a href="#explore"
+                ><button><h1>All</h1></button></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="cat">
+          <ul>
+            <li class="catList">
+              <button><h1>Popular</h1></button>
+              <ul>
+                <a href="state.html"><li>Kerala</li></a>
+                <a href="state.html"><li>Goa</li></a>
+                <a href="state.html"><li>Sikkim</li></a>
+                <a href="state.html"><li>Uttar Pradesh</li></a>
+                <a href="state.html"><li>Uttrakhand</li></a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="cat">
+          <ul>
+            <li class="catList">
+              <button><h1>Desert</h1></button>
+              <ul>
+                <a href="dest.html"><li>Jaisalmer</li></a>
+                <a href="dest.html"><li>Kutch</li></a>
+                <a href="dest.html"><li>Spiti</li></a>
+                <a href="dest.html"><li>Ladakh</li></a>
+                <a href="dest.html"><li>Jodhpur</li></a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="cat">
+          <ul>
+            <li class="catList">
+              <button><h1>Beaches</h1></button>
+              <ul>
+                <a href="dest.html"><li>Benaulim Beach ,Goa</li></a>
+                <a href="dest.html"><li>Digha Beach, West Bengal</li></a>
+                <a href="dest.html"><li>Kovalam Beach, Kerala</li></a>
+                <a href="dest.html"
+                  ><li>Agatti Island Beach, Lakshadweep</li></a
+                >
+                <a href="dest.html"><li>Promenade Beach, Pondicherry</li></a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="cat">
+          <ul>
+            <li class="catList">
+              <button><h1>Monsoon</h1></button>
+              <ul>
+                <a href="state.html"><li>Meghalaya</li></a>
+                <a href="state.html"><li>Maharashtra</li></a>
+                <a href="state.html"><li>Karnataka</li></a>
+                <a href="state.html"><li>Goa</li></a>
+                <a href="state.html"><li>Rajasthan</li></a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="cat">
+          <ul>
+            <li class="catList">
+              <button><h1>Snowfall</h1></button>
+              <ul>
+                <a href="state.html"><li>Uttrakhand</li></a>
+                <a href="state.html"><li>Himachal Pradesh</li></a>
+                <a href="state.html"><li>Arunachal Pradesh</li></a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="cat">
+          <ul>
+            <li class="catList">
+              <button><h1>Mountains</h1></button>
+              <ul>
+                <a href="state.html"><li>Kerala</li></a>
+                <a href="state.html"><li>Karnataka</li></a>
+                <a href="state.html"><li>Uttrakhand</li></a>
+                <a href="state.html"><li>Sikkim</li></a>
+                <a href="state.html"><li>Tamil Nadu</li></a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="cat">
+          <ul>
+            <li class="catList">
+              <button><h1>Cultural</h1></button>
+              <ul>
+                <a href="state.html"><li>Sikkim</li></a>
+                <a href="state.html"><li>Uttar Pradesh</li></a>
+                <a href="state.html"><li>Uttrakhand</li></a>
+                <a href="state.html"><li>West Bengal</li></a>
+                <a href="state.html"><li>Gujarat</li></a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="explore">
+        <div class="tabs">
+          <h1>India</h1>
+          <div class="tab">
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/0.png" alt="" title="Ladakh"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/9.png" alt="" title="Himachal Pradesh"
+              /></a>
+            </div>
+          </div>
+          <div class="tab">
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/20.png" alt="" title="Punjab"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/8.png" alt="" title="Harayana"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/26.png" alt="" title="Uttrakhand"
+              /></a>
+            </div>
+          </div>
+          <div class="tab">
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/21.png" alt="" title="Rajasthan"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/27.png" alt="" title="Uttar Pradesh"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/4.png" alt="" title="Bihar"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/22.png" alt="" title="Sikkim"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/3.png" alt="" title="Assam"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/2.png" alt="" title="Arunachal Pradesh"
+              /></a>
+            </div>
+          </div>
+          <div class="tab">
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/7.png" alt="" title="Gujarat"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/13.png" alt="" title="Madhya Pradesh"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/10.png" alt="" title="Jharkhand"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/28.png" alt="" title="West Bengal"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/16.png" alt="" title="Meghalaya"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/18.png" alt="" title="Nagaland"
+              /></a>
+            </div>
+          </div>
+          <div class="tab">
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/14.png" alt="" title="Maharashtra"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/5.png" alt="" title="Chattisgarh"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/19.png" alt="" title="Odisha"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/25.png" alt="" title="Tripura"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/15.png" alt="" title="Manipur"
+              /></a>
+            </div>
+          </div>
+          <div class="tab">
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/11.png" alt="" title="Karnataka"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/24.png" alt="" title="Telangana"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/1.png" alt="" title="Andhra Pradesh"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/17.png" alt="" title="Mizoram"
+              /></a>
+            </div>
+          </div>
+          <div class="tab">
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/12.png" alt="" title="Kerala"
+              /></a>
+            </div>
+            <div class="state">
+              <a href="state.html"
+                ><img src="img/23.png" alt="" title="Tamil Nadu"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="book">
+          <div id="logbook">
+            <p id="first">It's time to add</p>
+            <p id="second">new pages to your</p>
+          </div>
+          <lord-icon
+            src="https://cdn.lordicon.com/hursldrn.json"
+            trigger="morph"
+            style="width: 500px; height: 500px"
+          >
+          </lord-icon>
+          <p id="third">LogBook</p>
+        </div>
+      </div>
+      <hr />
+      <div id="map">
+        <table>
+          <tbody>
+            <caption>
+              Travellers
+            </caption>
+            <tr>
+              <td>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/c/NomadicIndian"
+                  ><img src="img/trav2.jfif" alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="https://www.youtube.com/c/yatridoctor" target="_blank"
+                  ><img src="img/trav3.avif" alt=""
+                /></a>
+              </td>
+              <td>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/c/mountaintrekker"
+                  ><img src="img/trav1.jpg" alt=""
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <a href="https://www.youtube.com/c/KritikaGoel" target="_blank"
+                  ><img src="img/trav4.jpg" alt=""
+                /></a>
+              </td>
+              <td>
+                <a href="https://www.youtube.com/user/Odomos7" target="_blank"
+                  ><img src="img/trav5.jpg" alt=""
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/c/TanyaKhanijow"
+                  ><img src="img/trav7.jfif" alt=""
+                /></a>
+              </td>
+              <td colspan="2">
+                <a href="https://www.youtube.com/c/RonnieBarty" target="_blank"
+                  ><img src="img/trav6.jpg" alt=""
+                /></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p id="india">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12065100.069085933!2d75.30027353464563!3d24.879896400876046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e1!3m2!1sen!2sin!4v1643873848600!5m2!1sen!2sin"
+            width="100%"
+            height="600px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </p>
+      </div>
+      <hr />
+      <hr />
+      <div id="foot">
+        <div id="info">
+          <h1>Namaste</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui,
+            dicta.
+          </p>
+          <h6>Lorem ipsum dolor sit.</h6>
+          <div id="contact">
+            <span> <h6>Contact : 9999222210</h6> </span
+            ><span>
+              <h6>Email : namasteIndia.gmail.com</h6>
+            </span>
+          </div>
+        </div>
+        <div id="icons">
+          <div id="instagram" title="instagram">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div id="fac" title="facebook"><i class="fab fa-facebook-f"></i></div>
+          <div id="twit" title="twitter"><i class="fab fa-twitter"></i></div>
+          <div id="pin" title="pinterest">
+            <i class="fab fa-pinterest-p"></i>
+          </div>
+          <div id="you" title="youtube"><i class="fab fa-youtube"></i></div>
+        </div>
+        <div id="lastImg">
+          <img src="img/last.png" alt="" />
+          <img src="img/last.png" alt="" />
+          <img src="img/last.png" alt="" />
+          <img src="img/last.png" alt="" />
+          <img src="img/last.png" alt="" />
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="parallax/parallax.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script>
+    var buttons = document.querySelectorAll(".btn");
+    var slides = document.querySelectorAll(".video-clip");
+    var divText = document.querySelectorAll(".text");
+    console.log(divText);
 
-<body>
-  <!-- <div class="cursor"></div> -->
-  <section id="paraimg">
-    <video class="video-clip active" src="img/one.mp4" muted autoplay loop></video>
-    <video class="video-clip" src="img/two.mp4" muted autoplay loop></video>
-    <video class="video-clip" src="img/three.mp4" muted autoplay loop></video>
-    <video class="video-clip" src="img/four.mp4" muted autoplay loop></video>
-    <div id="button">
-      <div class="btn"></div>
-      <div class="btn"></div>
-      <div class="btn"></div>
-      <div class="btn"></div>
-    </div>
-    <div id="writeup">
-      <div id="text">
-        <h1>Namaste</h1>
-        <p>Be a Traveller not a Tourist</p>
-        <button class="down"><a href="#main"><i class="far fa-hand-point-down"></i></a></button>
-      </div>
-      <div id="icon_head">
-        <div id="insta" title="instagram"><i class="fab fa-instagram"></i></div>
-        <div id="fac" title="facebook"><i class="fab fa-facebook-f"></i></div>
-        <div id="twit" title="twitter"><i class="fab fa-twitter"></i></div>
-        <div id="pin" title="pinterest"><i class="fab fa-pinterest-p"></i></div>
-      </div>
-    </div>
-  </section>
-  <section id="main">
-    <div id="quote">
-      <i class="fas fa-quote-left"></i>
-      <p>The World is a Book and those who do not travel read only one Page</p>
-      <h4>~ Saint Augustine</h4>
-      <h1>-</h1>
-    </div>
-    <div id="context">
-      <i class="fas fa-star-half-alt"></i>
-      <h1>Explore</h1>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="dest.html"><img src="img/swiper1.jpg" /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="dest.html"><img src="img/swiper2.jfif" /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="dest.html"><img src="img/swiper3.jfif" /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="dest.html"><img src="img/swiper4.jpg" /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="dest.html"><img src="img/swiper5.jpg" /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="dest.html"><img src="img/swiper6.jfif" /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="dest.html"><img src="img/swiper7.jpg" /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="dest.html"><img src="img/swiper8.jfif" /></a>
-          </div>
-          <div class="swiper-slide">
-            <a href="dest.html"><img src="img/swiper9.jpg" /></a>
-          </div>
-        </div>
-      </div>
-      <div>
-      </div>
-    </div>
-    <div class="search">
-      <form class="search-bar" id="searchForm">
-        <input type="text" placeholder="Search for a state here" name="search" id="state">
-        <button type="submit" id="searchButton"><img src="img/search.png" alt=""></button>
-      </form>
-    </div>
-    <div id="tabs">
-      <div class="card" style="width: 200px">
-        <img src="img/1.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Andhra Pradesh</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/2.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Arunachal Pradesh</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/3.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Assam</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/4.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Bihar</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/5.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Chattisgarh</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/6.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Goa</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/7.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Gujarat</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/8.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Haryana</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/9.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Himachal Pradesh</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/10.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Jharkhand</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/11.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Karnataka</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/12.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Kerala</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/13.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Madhya Pradesh</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/14.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Maharashtra</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/15.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Manipur</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/16.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Meghalaya</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/17.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Mizoram</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/18.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Nagaland</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/19.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Odisha</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/20.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Punjab</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/21.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Rajasthan</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/22.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Sikkim</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/23.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Tamil Nadu</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/24.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Telangana</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/25.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Tripura</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/26.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Uttarakhand</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/27.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">Uttar Pradesh</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-      <div class="card" style="width: 200px">
-        <img src="img/28.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="cardTitle">West Bengal</h5>
-          <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae culpa
-            praesentium eius obcaeca...</p>
-          <a href="state.html"><button class="btn">Show more</button></a>
-        </div>
-      </div>
-    </div>
-    <div id="map">
-      <table>
-        <tbody>
-          <caption>Travellers</caption>
-          <tr>
-            <td>
-              <img src="img/trav2.jfif" alt="">
-            </td>
-            <td>
-              <img src="img/trav3.jpg" alt="">
-            </td>
-            <td>
-              <img src="img/trav1.jpg" alt="">
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <img src="img/trav4.jpg" alt="">
-            </td>
-            <td>
-              <img src="img/trav5.jpg" alt="">
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="img/trav7.jfif" alt="">
-            </td>
-            <td colspan="2">
-              <img src="img/trav6.jpg" alt="">
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <p id="india">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12065100.069085933!2d75.30027353464563!3d24.879896400876046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e1!3m2!1sen!2sin!4v1643873848600!5m2!1sen!2sin"
-          width="100%" height="600px" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
-      </p>
-    </div>
-    <hr>
-    <hr>
-    <div id="foot">
-      <div id="info">
-        <h1>Namaste</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, dicta.</p>
-        <h6>Lorem ipsum dolor sit.</h6>
-        <div id="contact">
-          <span>
-            <h6>Contact : 9999222210</h6>
-          </span><span>
-            <h6>Email : namasteIndia.gmail.com</h6>
-          </span>
-        </div>
-      </div>
-      <div id="icons">
-        <div id="instagram" title="instagram"><i class="fab fa-instagram"></i></div>
-        <div id="fac" title="facebook"><i class="fab fa-facebook-f"></i></div>
-        <div id="twit" title="twitter"><i class="fab fa-twitter"></i></div>
-        <div id="pin" title="pinterest"><i class="fab fa-pinterest-p"></i></div>
-        <div id="you" title="youtube"><i class="fab fa-youtube"></i></div>
-      </div>
-      <div id="lastImg">
-        <img src="img/last.png" alt="">
-        <img src="img/last.png" alt="">
-        <img src="img/last.png" alt="">
-        <img src="img/last.png" alt="">
-        <img src="img/last.png" alt="">
-      </div>
-    </div>
-  </section>
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="parallax/parallax.min.js"></script>
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<script>
-  var buttons = document.querySelectorAll(".btn");
-  var slides = document.querySelectorAll(".video-clip");
-
-  function addClass(num) {
-    buttons.forEach(btn => {
-      btn.classList.remove("active");
+    function addClass(num) {
+      buttons.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      slides.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      divText.forEach((btn) => {
+        btn.classList.remove("show");
+        btn.classList.add("hide");
+      });
+      buttons[num].classList.add("active");
+      slides[num].classList.add("active");
+      divText[num].classList.add("show");
+      divText[num].classList.remove("hide");
+    }
+    buttons.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        addClass(i);
+      });
     });
-    slides.forEach(btn => {
-      btn.classList.remove("active");
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
     });
-    buttons[num].classList.add("active");
-    slides[num].classList.add("active");
-  }
-  buttons.forEach((btn, i) => {
-    btn.addEventListener('click', () => {
-      addClass(i);
+
+    var searchButton = document.getElementById("searchButton");
+    var searchInput = document.getElementById("search");
+    searchButton.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.location.href = "state.html";
+      searchInput.value = "";
     });
-  });
-  var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-    loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  });
-
-  var searchButton = document.getElementById('searchButton');
-  var searchInput = document.getElementById('search');
-  searchButton.addEventListener('click' , (e) => {
-    e.preventDefault();
-    window.location.href = 'state.html';
-    searchInput.value = ''
-  })
-  
-
-</script>
-
+  </script>
+  <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
 </html>

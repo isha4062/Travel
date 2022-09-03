@@ -2,13 +2,15 @@
 
 #offcanvasRight #p-places{
     border: 2px dotted skyblue;
-    height: 650px;
+    height: 500px;
     width: 500px;
     display: flex;
     flex-direction: column;
 }
 #offcanvasRight #p-places li{
     list-style: none;
+    width: 169px;
+    text-align: left;
 }
 #offcanvasRight #p-places li i{
     color: pink;
@@ -19,6 +21,7 @@
     font-family: 'The Nautigal', cursive;
     font-size: 50px;
     font-weight: bold;
+    margin-top: 40px;
 }
 #offcanvasRight #p-places a{
     text-decoration: none;
@@ -26,28 +29,11 @@
     font-family: cursive;
     font-size: 13px;
 }
-#offcanvasRight #s h1{
-    text-align: center;
-}
 #offcanvasRight #s-states{
     width: 450px;
     margin-top: -30px;
 }
 #offcanvasRight #s-states ul{
-    display: grid;
-    grid-template-columns: auto auto;
-}
-#offcanvasRight #u{
-    margin-top: 315px;
-}
-#offcanvasRight #u h1{
-    text-align: center;
-}
-#offcanvasRight #u-union{
-    width: 450px;
-    margin-top: -30px;
-}
-#offcanvasRight #u-union ul{
     display: grid;
     grid-template-columns: auto auto;
 }

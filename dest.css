@@ -109,19 +109,6 @@ li#title i{
     display: grid;
     grid-template-columns: auto auto;
 }
-#offcanvasExample #u h1{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-#offcanvasExample #u-union{
-    width: 450px;
-    margin-top: -30px;
-}
-#offcanvasExample #u-union ul{
-    display: grid;
-    grid-template-columns: auto auto;
-}
 #offcanvasExample{
     width: 550px;
 }
