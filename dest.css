@@ -4,6 +4,7 @@
 body{
 	background: #3A3A42;
 	box-sizing: content-box;
+    width: 100%;
 }
 .menu{
 	position: fixed;
@@ -58,21 +59,11 @@ li#title i{
     font-size: 100px;
     margin-bottom: 30px;
 }
-#people{
-    font-size: 20px;
-    cursor: pointer;
-}
-#message{
-    font-size: 10px;
-    font-family: cursive;
-    font-weight: bold;
-    color: grey;
-}
 
 /* destination */
 #offcanvasExample #p-places{
     border: 2px dotted skyblue;
-    height: 800px;
+    height: 560px;
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -200,12 +191,14 @@ div#fixed-img{
     height: 650px;
 }
 figure{
-    overflow: hidden;    
+    overflow: hidden;   
+    height: 100%;
 }
 #fixed-img img{
     overflow: hidden;
     transform: scale(1);
     transition: 1s ease-in-out;
+    height: 100%;
 }
 #fixed-img:hover img{
     transform: scale(1.5);
@@ -225,4 +218,77 @@ figure{
 }
 #last i{
     color: orange;
+}
+
+/* responsiveness */
+@media (max-width: 1209px) {
+    .menu{
+        height: 80px;
+        background: #F9D401;
+        width: 100%;
+        box-shadow: none;
+        transition: none;
+        z-index: 1;
+    }
+    .menu:hover{
+        width: 100%;
+        box-shadow: none;
+    }
+    .menu:hover ~ .container{
+        transform: none;
+    }
+    .menu:hover nav{
+        left: 0;
+    }
+    ul li{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        padding-left: 30px;
+    }
+    li#title i{
+        font-size: 60px;
+    }
+    li{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #icons{
+        display: none;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 0px;
+        width: 100%;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    div.container{
+        display: flex;
+        flex-direction: column;
+    }
+    div.one{
+        width: 100%;
+    }
+    div#fixed-img{
+        margin-top: 100px;
+        width: 100%;
+    }
+    #fixed-img img{
+        /* height: 100%; */
+        width: 100%;
+        margin: 0px;
+    }
+    #last{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

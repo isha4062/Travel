@@ -550,3 +550,116 @@ div#foot #lastImg img{
     height: 30px;
     width: 100%;
 }
+
+@media (max-width: 1206px) {
+    #context i{
+        display: none;
+    }
+    div.category{
+        margin-left: 0px;
+    }
+    div#foot #contact{
+        margin-left: 300px;
+    }
+    div#foot #icons{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 1166px) {
+    div.category{
+        grid-template-columns: auto auto auto;
+    }
+}
+@media (max-width: 1123px) {
+    div.book{
+        display: none;
+    }
+    div.tabs{
+        width: 90%;
+    }
+}
+@media (max-width: 849px) {
+    div.category{
+        grid-template-columns: auto auto;
+        margin-bottom: 130px;
+    }
+    div.cat{
+        margin: 5px;
+    }
+}
+@media (max-width: 780px) {
+    div.tabs .state{
+        width: 100px;
+    }
+    div#foot #contact{
+        margin-left: 0px;
+    }
+    div#instagram{
+        margin-left: 200px;
+    }
+}
+@media (max-width: 700px) {
+    div#map p#india{
+        display: none;
+    }
+    div.text.show h1{
+        font-size: 40px;
+        width: 100%;
+    }
+    div.text.show p{
+        font-size: 10px;
+    }
+    div#map table{
+        width: 80%;
+    }
+}
+@media (max-width: 647px) {
+    #quote h4{
+        display: none;
+    }
+    div.category{
+        grid-template-columns: auto;
+        margin-bottom: 200px;
+        height: 350px;
+    }
+    div.tabs{
+        display: none;
+    }
+    div.category ul li#all{
+        display: none;
+    }
+    div.category button{
+        width: 100%;
+    }
+    div.category ul ul{
+        width: 75%;
+    }
+    div#icons{
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 400px) {
+    div#foot #contact{
+        flex-direction: column;
+    }
+    div#foot #contact span{
+        margin-left: 60px;
+    }
+    div#foot #contact span h6{
+        font-size: 12px;
+    }
+    form.search-bar input{
+        padding: 15px 0px;
+        font-size: 12px;
+    }
+    form.search-bar button{
+        width: 45px;
+        height: 45px;
+    }
+    form.search-bar {
+        width: 58%;
+    }
+    div#icons{
+        display: none;
+    }
+}
